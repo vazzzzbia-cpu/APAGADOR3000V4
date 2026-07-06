@@ -6,10 +6,7 @@
 
 import sqlite3
 
-db = sqlite3.connect(
-    "/data/data/com.termux/files/home/dados.db",
-    check_same_thread=False
-)
+db = sqlite3.connect("dados.db", check_same_thread=False)
 
 cur = db.cursor()
 
